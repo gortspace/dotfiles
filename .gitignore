@@ -1,7 +1,0 @@
-*
-!.bashrc
-
-!.gitconfig
-!.oh-my-zsh/custom/*
-!.zshenv
-!.zshrc
