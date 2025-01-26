@@ -9,3 +9,6 @@ stow bash
 stow git
 stow zsh
 ```
+
+## References
+- [awesome-dotfiles](https://github.com/webpro/awesome-dotfiles?tab=readme-ov-file)
