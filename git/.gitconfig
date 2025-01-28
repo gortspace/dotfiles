@@ -3,3 +3,5 @@
 [user]
 	email = garrett.zuck@gmail.com
 	name = Garrett Zuck
+[core]
+	editor = code --wait
