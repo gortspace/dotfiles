@@ -6,7 +6,7 @@ sudo apt install stow
 git clone git@github.com:gortspace/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow bash
-stow git
+stow git # Important! not ".git"
 stow tmux
 stow zsh
 ```

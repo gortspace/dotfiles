@@ -63,6 +63,18 @@ else
 fi
 unset color_prompt force_color_prompt
 
+git_prompt=yes
+if [ "$git_prompt" = yes ]; then
+    . ~/.git-prompt.sh
+    GIT_PS1_SHOWDIRTYSTATE="yes"
+    GIT_PS1_SHOWSTASHSTATE=
+    GIT_PS1_SHOWUPSTREAM="auto" # auto: "<" behind, ">" ahead, "<>" diverged, "=" same
+    GIT_PS1_SHOWCONFLICTSTATE="yes"
+    GIT_PS1_SHOWCOLORHINTS=
+    PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w \[\033[01;35m\]$(__git_ps1 "(%s)")\[\033[00m\]\$ '
+fi
+unset git_prompt
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -86,10 +98,6 @@ fi
 
 # colored GCC warnings and errors
 # export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

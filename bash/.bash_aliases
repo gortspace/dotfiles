@@ -10,9 +10,6 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias l1="ls -1"
 
-# Shell history
-alias h="history"
-
 # Make
 # ----
 #? Is there a good way to detect if the current repo is rust and replace make with with
@@ -47,9 +44,15 @@ alias gstl="git stash list"
 alias gsu="git submodule update --initq --recursive"
 alias gss="git submodule status"
 
-# Longer aliases
-# --------------
+# Miscellaneous
+# -------------
 alias update="sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y"
 alias rebash="source ~/.bashrc"
 
 alias please=sudo
+
+# Shell history
+alias h="history"
+
+# "alert" for long running commands. Use like so: sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
