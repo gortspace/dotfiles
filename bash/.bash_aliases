@@ -12,12 +12,17 @@ alias l1="ls -1"
 
 # Make
 # ----
-#? Is there a good way to detect if the current repo is rust and replace make with with
-# cargo build, test, run, etc.?
 alias m="make"
 alias mt="make test"
 alias mc="make clean"
 alias mct="make clean && make test"
+
+# Cargo
+# -----
+alias cb="cargo build" # cargo b
+alias cr="cargo run"   # cargo r
+alias cn="cr"          # Because c + r is slow with one hand
+alias ct="cargo test"  # cargo t
 
 # Git
 # ---
@@ -53,6 +58,8 @@ alias please=sudo
 
 # Shell history
 alias h="history"
+
+alias ps="ps -a"
 
 # "alert" for long running commands. Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
