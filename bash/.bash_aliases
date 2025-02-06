@@ -10,12 +10,23 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias l1="ls -1"
 
+# tree
+# ----
+alias tree_time='tree -D --timefmt="%H:%M:%S"'
+
+# watch
+# -----
+alias watch="watch -n 0.1 "
+
 # Make
 # ----
-alias m="make"
-alias mt="make test"
-alias mc="make clean"
-alias mct="make clean && make test"
+alias m="make "
+alias mc="make clean "
+alias mt="make test "
+alias mr="make run "
+alias mcm="make clean && make "
+alias mcr="make clean && make run "
+alias mct="make clean && make test "
 
 # Cargo
 # -----
@@ -26,7 +37,7 @@ alias ct="cargo test"  # cargo t
 
 # Git
 # ---
-alias g="git"
+alias g="git "
 alias gs="git status"
 alias gf="git fetch"
 
@@ -59,7 +70,7 @@ alias please=sudo
 # Shell history
 alias h="history"
 
-alias ps="ps -a"
+alias ps="ps -a "
 
 # "alert" for long running commands. Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
