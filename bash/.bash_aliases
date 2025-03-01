@@ -2,7 +2,6 @@
 # https://github.com/Bash-it/bash-it
 # https://github.com/mathiasbynens/dotfiles - Check out PS1 .bash_prompt
 
-
 # List directory contents
 # -----------------------
 alias l='ls -CF'
@@ -12,17 +11,19 @@ alias l1="ls -1"
 
 # tree
 # ----
-alias tree_time='tree -D --timefmt="%H:%M:%S"'
+alias tree-time='tree -D --timefmt="%H:%M:%S"'
 
 # watch
 # -----
 alias watch="watch -n 0.1 "
+alias watch-tree="watch --color tree -C "
 
 # Make
 # ----
 alias m="make "
 alias mc="make clean "
 alias mt="make test "
+alias mp="make bench " # p for "performance" to deconflict with b for "build"
 alias mr="make run "
 alias mcm="make clean && make "
 alias mcr="make clean && make run "
