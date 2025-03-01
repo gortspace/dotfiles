@@ -71,7 +71,7 @@ if [ "$git_prompt" = yes ]; then
     GIT_PS1_SHOWUPSTREAM="auto" # auto: "<" behind, ">" ahead, "<>" diverged, "=" same
     GIT_PS1_SHOWCONFLICTSTATE="yes"
     GIT_PS1_SHOWCOLORHINTS=
-    PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w \[\033[01;35m\]$(__git_ps1 "(%s)")\[\033[00m\]\$ '
+    PS1='\[\033[01;32m\]\u \[\033[01;34m\]\w \[\033[01;35m\]$(__git_ps1 "(%s)")\[\033[00m\]\$ '
 fi
 unset git_prompt
 
