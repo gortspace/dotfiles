@@ -31,6 +31,7 @@ alias mct="make clean && make test "
 
 # Cargo
 # -----
+alias c="cargo"
 alias cb="cargo build" # cargo b
 alias cr="cargo run"   # cargo r
 alias cn="cr"          # Because c + r is slow with one hand
