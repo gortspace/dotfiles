@@ -5,3 +5,5 @@
 	name = Garrett Zuck
 [core]
 	editor = code --wait
+[pull]
+	ff = only
