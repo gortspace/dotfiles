@@ -123,3 +123,6 @@ fi
 if [ -f ~/.bashrc_extra ]; then
     . ~/.bashrc_extra
 fi
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
