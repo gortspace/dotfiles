@@ -9,6 +9,7 @@ stow bash
 stow git # Important! not ".git"
 stow tmux
 stow zsh
+stow nvim
 ```
 
 ## TMUX
