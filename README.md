@@ -12,6 +12,9 @@ stow zsh
 stow nvim
 ```
 
+## Font
+- Install from [here](https://github.com/microsoft/cascadia-code/wiki/Installing-Cascadia-Code)
+
 ## TMUX
 - Install [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - C-B + I to install all plugins
