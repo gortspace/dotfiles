@@ -28,6 +28,15 @@ sudo stow -t / keyd
 - Install [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - C-B + I to install all plugins
 
+## fzf
+- sudo apt install fzf
+- eval "$(fzf --bash)"
+- This gives
+    - ctrl+T: fzf-select
+    - ctrl+R: fzf-history
+    - alt-C: fzf-cd
+    - **<TAB> to launch fzf file search while writing another command
+
 ## References
 - [awesome-dotfiles](https://github.com/webpro/awesome-dotfiles?tab=readme-ov-file)
 
