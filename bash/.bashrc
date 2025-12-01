@@ -124,5 +124,6 @@ if [ -f ~/.bashrc_extra ]; then
     . ~/.bashrc_extra
 fi
 
+# nvim globally visible
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 

@@ -10,12 +10,21 @@ stow git # Important! not ".git"
 stow tmux
 stow zsh
 stow nvim
+sudo stow -t / keyd
 ```
 
 ## Font
 - Install from [here](https://github.com/microsoft/cascadia-code/wiki/Installing-Cascadia-Code)
 
-## TMUX
+## keyd
+- Install from [source](https://github.com/rvaiya/keyd?tab=readme-ov-file#from-source)
+- Likely create ~/tools/keyd/ to house the source code
+
+## nvim
+- Install from [releases](https://github.com/neovim/neovim)
+- Add to PATH
+
+## tmux
 - Install [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - C-B + I to install all plugins
 
