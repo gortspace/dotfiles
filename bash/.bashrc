@@ -129,3 +129,7 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 # Cargo
 . "$HOME/.cargo/env"
+
+# Set up fzf key bindings and fuzzy completion
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
