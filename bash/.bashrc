@@ -127,4 +127,5 @@ fi
 # nvim globally visible
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
+# Cargo
 . "$HOME/.cargo/env"
