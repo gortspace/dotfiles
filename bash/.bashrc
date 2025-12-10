@@ -130,6 +130,18 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # Cargo
 . "$HOME/.cargo/env"
 
+# protoc
+# . "$HOME/tools/protobuf/bin"
+
+# uv
+eval "$(uv generate-shell-completion bash)"
+eval "$(uvx --generate-shell-completion bash)"
+
 # Set up fzf key bindings and fuzzy completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add .local to path for various binaries
+# ln -s ~/tools/protobuf/bin/protoc ~/.local/bin/protoc
+# ln -s $(which fdfind) ~/.local/bin/fd
+export PATH="$HOME/.local/bin:$PATH"
 
