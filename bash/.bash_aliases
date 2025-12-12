@@ -32,10 +32,11 @@ alias mct="make clean && make test "
 # Cargo
 # -----
 alias c="cargo"
-alias cb="cargo build" # cargo b
-alias cr="cargo run"   # cargo r
+alias cb="cargo build"
+alias cr="cargo run"
 alias cn="cr"          # Because c + r is slow with one hand
-alias ct="cargo test"  # cargo t
+alias ct="cargo test"
+alias ch="cargo check"
 
 # Git
 # ---
