@@ -145,3 +145,5 @@ eval "$(uvx --generate-shell-completion bash)"
 # ln -s $(which fdfind) ~/.local/bin/fd
 export PATH="$HOME/.local/bin:$PATH"
 
+# prek and pre-commit have awful colors with poor contrast
+export PREK_COLOR=never
