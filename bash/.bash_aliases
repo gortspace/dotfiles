@@ -56,12 +56,15 @@ alias gb="git fetch && git branch --all"
 alias gbb="git branch -vv | grep behind || echo 'No branches behind remote'"
 alias gba="git branch -vv | grep ahead || echo 'No branches ahead of remote'"
 
-# statsh
+# stash
 alias gstl="git stash list"
 
 # submodule
 alias gsu="git submodule update --initq --recursive"
 alias gss="git submodule status"
+
+# rebase
+alias grc="git rebase --continue"
 
 # Miscellaneous
 # -------------
