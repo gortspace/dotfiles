@@ -10,6 +10,7 @@ stow git # Important! not ".git"
 stow tmux
 stow zsh
 stow nvim
+stow vscode
 sudo stow -t / keyd
 ```
 
@@ -31,6 +32,12 @@ sudo stow -t / keyd
 ## fzf
 - Install from git
 - ./fzf/install (or something)
+
+## vscode
+- Backup existing settings first: `cp ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.backup`
+- Remove existing settings: `rm ~/.config/Code/User/settings.json`
+- Run `stow vscode` to create symlinks
+- Custom dictionaries organized by domain (dotfiles, rust, aerospace, general)
 
 ## References
 - [awesome-dotfiles](https://github.com/webpro/awesome-dotfiles?tab=readme-ov-file)

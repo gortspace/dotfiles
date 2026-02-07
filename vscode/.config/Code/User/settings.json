@@ -1,0 +1,160 @@
+{
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "chat.commandCenter.enabled": false,
+    "editor.rulers": [
+        90
+    ],
+    "window.zoomLevel": -0.3,
+    // Files
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    // TOML
+    "evenBetterToml.formatter.alignEntries": false,
+    "evenBetterToml.formatter.alignComments": false,
+    "evenBetterToml.formatter.reorderArrays": false,
+    "evenBetterToml.formatter.reorderInlineTables": false,
+    "evenBetterToml.formatter.reorderKeys": false,
+    "evenBetterToml.formatter.trailingNewline": true,
+    "evenBetterToml.semanticTokens": true,
+    "evenBetterToml.formatter.allowedBlankLines": 2,
+    "evenBetterToml.formatter.arrayAutoCollapse": true,
+    "evenBetterToml.formatter.arrayTrailingComma": true,
+    "evenBetterToml.formatter.arrayAutoExpand": false,
+    "evenBetterToml.formatter.columnWidth": 32,
+    // Markdown
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    // Python
+    "[python]": {
+        "editor.rulers": [
+            88
+        ]
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "ty.inlayHints.callArgumentNames": false,
+    "ty.diagnosticMode": "workspace",
+    "ty.inlayHints.variableTypes": false,
+    // Just
+    "[just]": {
+    },
+    // Rust
+    "files.readonlyInclude": {
+        "**/.cargo/registry/src/**/*.rs": true,
+        "**/.cargo/git/checkouts/**/*.rs": true,
+        "**/lib/rustlib/src/rust/library/**/*.rs": true
+    },
+    "[rust]": {
+        "editor.rulers": [
+            100
+        ],
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    // Rust Analyzer
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.procMacro.ignored": {
+        "googletest_macro": ["gtest"]
+    },
+    "rust-analyzer.server.extraEnv": {
+        "CHALK_OVERFLOW_DEPTH": "100000",
+        "CHALK_SOLVER_MAX_SIZE": "10000"
+    },
+    "rust-analyzer.showSyntaxTree": true,
+    "rust-analyzer.lens.implementations.enable": false,
+    "rust-analyzer.lens.run.enable": false,
+    "rust-analyzer.lens.debug.enable": false,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "rust-analyzer.testExplorer": true,
+    // Claude
+    "claudeCode.selectedModel": "haiku",
+    "claudeCode.useCtrlEnterToSend": true,
+    "claudeCode.preferredLocation": "sidebar",
+    // Copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#F1521F",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "todohighlight.defaultStyle": {
+        "backgroundColor": "#b36b49",
+        "overviewRulerColor": "#b36b49"
+    },
+    // Spelling
+    "cSpell.customDictionaries": {
+        "dotfiles": {
+            "name": "Dotfiles",
+            "path": "~/.config/Code/User/dictionaries/dotfiles.txt",
+            "addWords": true
+        },
+        "rust": {
+            "name": "Rust",
+            "path": "~/.config/Code/User/dictionaries/rust.txt",
+            "addWords": true
+        },
+        "aerospace": {
+            "name": "Aerospace",
+            "path": "~/.config/Code/User/dictionaries/aerospace.txt",
+            "addWords": true
+        },
+        "general": {
+            "name": "General",
+            "path": "~/.config/Code/User/dictionaries/general.txt",
+            "addWords": true
+        }
+    }
+}

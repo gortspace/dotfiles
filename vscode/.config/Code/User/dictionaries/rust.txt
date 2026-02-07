@@ -1,0 +1,17 @@
+ahash
+bitflags
+clippy
+hashbrown
+hashset
+heapless
+itertools
+justfile
+libm
+nalgebra
+nextest
+proptest
+rstest
+rtest
+rustc
+serde
+thiserror
