@@ -32,6 +32,9 @@ sudo stow -t / keyd
 ## fzf
 - Install from git
 - ./fzf/install (or something)
+- fzf-git.sh provides git fuzzy finding (CTRL-G prefix for all bindings)
+- Install `bat` for syntax-highlighted previews: `sudo apt install bat`
+- Key bindings customized: CTRL-G CTRL-R for branches (avoiding tmux CTRL-B conflict)
 
 ## vscode
 - Backup existing settings first: `cp ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.backup`

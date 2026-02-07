@@ -140,6 +140,9 @@ eval "$(uvx --generate-shell-completion bash)"
 # Set up fzf key bindings and fuzzy completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# fzf-git.sh for git fuzzy finding
+[ -f ~/.fzf-git.sh ] && source ~/.fzf-git.sh
+
 # Add .local to path for various binaries
 # ln -s ~/tools/protobuf/bin/protoc ~/.local/bin/protoc
 # ln -s $(which fdfind) ~/.local/bin/fd
