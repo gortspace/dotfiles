@@ -50,6 +50,7 @@ alias gga="gg --all"
 alias ggo="gg --oneline"
 alias ggs="gg --stat"
 alias ggoa="gg --oneline --all"
+alias ggof="gg --oneline --first-parent"
 
 # branch
 alias gb="git fetch && git branch --all"
