@@ -137,6 +137,9 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 eval "$(uv generate-shell-completion bash)"
 eval "$(uvx --generate-shell-completion bash)"
 
+# mcap
+eval "$(mcap completion bash)"
+
 # Set up fzf key bindings and fuzzy completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
