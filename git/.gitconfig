@@ -3,7 +3,12 @@
 [user]
 	email = garrett.zuck@gmail.com
 	name = Garrett Zuck
+	signingkey = 4C3CFA41D21CA51D
 [core]
 	editor = code --wait
 [pull]
 	ff = only
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
