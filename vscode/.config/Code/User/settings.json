@@ -41,8 +41,7 @@
     "ty.diagnosticMode": "workspace",
     "ty.inlayHints.variableTypes": false,
     // Just
-    "[just]": {
-    },
+    "[just]": {},
     // Rust
     "files.readonlyInclude": {
         "**/.cargo/registry/src/**/*.rs": true,
@@ -59,30 +58,43 @@
     // Rust Analyzer
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.workspace": false,
+    "rust-analyzer.completion.limit": 50,
+    // "rust-analyzer.cachePriming.enable": false, // Slower on first open, but less memory
+    "rust-analyzer.hover.actions.enable": false,
+    "rust-analyzer.diagnostics.disabled": [
+        // "unresolved-proc-macro",
+        "proc-macro-disabled", // Gets rid of the squiggles when proc macros are ignored
+    ],
     "rust-analyzer.procMacro.ignored": {
-        "googletest_macro": ["gtest"]
+        // Ignore to help prevent crashes
+        "googletest_macro": [
+            "gtest" // AttrId panic on speculative expansion in completions
+        ],
+        "tokio-macros": [
+            "main" // AttrId panic on speculative expansion in completions
+        ],
+        "rstest_macros": [
+            // "rstest", "case", "fixture", "values" // AttrId panic when stacked with gtest
+        ]
     },
     "rust-analyzer.server.extraEnv": {
-        "CHALK_OVERFLOW_DEPTH": "100000",
-        "CHALK_SOLVER_MAX_SIZE": "10000"
+        // Increase to help prevent crashes?
+        // "CHALK_OVERFLOW_DEPTH": "100000",
+        // "CHALK_SOLVER_MAX_SIZE": "10000"
     },
+    // "rust-analyzer.cargo.features": ["std"],
+    // "rust-analyzer.check.features": ["std"],
     "rust-analyzer.showSyntaxTree": true,
     "rust-analyzer.lens.implementations.enable": false,
-    "rust-analyzer.lens.run.enable": false,
-    "rust-analyzer.lens.debug.enable": false,
+    "rust-analyzer.lens.run.enable": true,
+    "rust-analyzer.lens.debug.enable": true,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "rust-analyzer.testExplorer": true,
-    // Claude
-    "claudeCode.selectedModel": "haiku",
     "claudeCode.useCtrlEnterToSend": true,
     "claudeCode.preferredLocation": "sidebar",
-    // Copilot
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "better-comments.tags": [
         {
             "tag": "!",
@@ -139,7 +151,7 @@
         "dotfiles": {
             "name": "Dotfiles",
             "path": "~/.config/Code/User/dictionaries/dotfiles.txt",
-            "addWords": true
+            "addWords": false
         },
         "rust": {
             "name": "Rust",
@@ -156,5 +168,30 @@
             "path": "~/.config/Code/User/dictionaries/general.txt",
             "addWords": true
         }
-    }
+    },
+    "cSpell.userWords": [
+        // Unsorted words end up here. Move them into dictionary .txt files periodically
+        "Swatinem"
+    ],
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "TBD",
+        "IDEA"
+    ],
+    "todo-tree.highlights.highlightDelay": 250,
+    "chat.agentsControl.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "claudeCode.selectedModel": "default",
+    "diffEditor.ignoreTrimWhitespace": true,
 }
