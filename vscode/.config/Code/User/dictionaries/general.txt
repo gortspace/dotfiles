@@ -1,7 +1,10 @@
+ACMR
 Basemodel
 behavoir
+combinatorially
 deconflict
 Deque
+fgrep
 gortspace
 gpss
 inertially
@@ -14,7 +17,10 @@ perc
 PITL
 powi
 Quadcopter
+reflash
+reflashes
 Runge
+scriptable
 SITL
 SLERP
 SPMC
@@ -24,6 +30,7 @@ throttleable
 timestamping
 todohighlight
 usize
+xyzw
 zstd
 Zuck
 Zvezda

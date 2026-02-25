@@ -1,10 +1,16 @@
 ahash
 bitflags
 clippy
+concatcp
+doctests
+dorny
+dtolnay
 hashbrown
 hashset
 heapless
 itertools
+jsonschema
+jsonschemas
 justfile
 libm
 nalgebra
@@ -12,6 +18,10 @@ nextest
 proptest
 rstest
 rtest
+RTIC
 rustc
 serde
+stdlib
+taiki
 thiserror
+turbofish
