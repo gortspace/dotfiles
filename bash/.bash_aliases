@@ -58,7 +58,7 @@ alias gbb="git branch -vv | grep behind || echo 'No branches behind remote'"
 alias gba="git branch -vv | grep ahead || echo 'No branches ahead of remote'"
 
 # stash
-alias gstl="git stash list"
+alias gstl='git stash list --format="%C(yellow)%gd%C(reset) %C(cyan)(%cr)%C(reset) %s"'
 
 # submodule
 alias gsu="git submodule update --initq --recursive"
