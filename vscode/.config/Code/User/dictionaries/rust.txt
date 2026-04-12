@@ -5,9 +5,13 @@ concatcp
 doctests
 dorny
 dtolnay
+eigen
 hashbrown
 hashset
 heapless
+hypot
+idents
+impls
 itertools
 jsonschema
 jsonschemas
@@ -20,8 +24,13 @@ rstest
 rtest
 RTIC
 rustc
+rustflags
+rustup
 serde
+signum
 stdlib
 taiki
 thiserror
+tonemapping
+trybuild
 turbofish
