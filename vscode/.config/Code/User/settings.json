@@ -8,7 +8,6 @@
     "editor.rulers": [
         90
     ],
-    "window.zoomLevel": -0.3,
     // Files
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
@@ -93,8 +92,15 @@
     "rust-analyzer.lens.debug.enable": true,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "rust-analyzer.testExplorer": true,
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ],
+    "rust-analyzer.cargo.features": "all",
+    // Claude
     "claudeCode.useCtrlEnterToSend": true,
-    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.selectedModel": "default",
+    // Better comments
     "better-comments.tags": [
         {
             "tag": "!",
@@ -142,10 +148,24 @@
             "italic": false
         }
     ],
+    // TODO Highlighter
     "todohighlight.defaultStyle": {
         "backgroundColor": "#b36b49",
         "overviewRulerColor": "#b36b49"
     },
+    // TODO Tree
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "TBD",
+        "IDEA"
+    ],
+    "todo-tree.highlights.highlightDelay": 250,
     // Spelling
     "cSpell.customDictionaries": {
         "dotfiles": {
@@ -170,21 +190,19 @@
         }
     },
     "cSpell.userWords": [
-        // Unsorted words end up here. Move them into dictionary .txt files periodically
-        "Swatinem"
+        "bokeh",
+        "footgun",
+        "greyscale",
+        "Lensflare",
+        "logdepthbuf",
+        "MSAA",
+        "navcam",
+        "Phong",
+        "setpoints",
+        "SMAA",
+        "Swatinem",
+        "wgsl"
     ],
-    "todo-tree.general.tags": [
-        "BUG",
-        "HACK",
-        "FIXME",
-        "TODO",
-        "XXX",
-        "[ ]",
-        "[x]",
-        "TBD",
-        "IDEA"
-    ],
-    "todo-tree.highlights.highlightDelay": 250,
     "chat.agentsControl.enabled": false,
     "github.copilot.enable": {
         "*": false,
@@ -192,6 +210,11 @@
         "markdown": false,
         "scminput": false
     },
-    "claudeCode.selectedModel": "default",
     "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": -0.3,
+    "chatgpt.commentCodeLensEnabled": false,
 }
